@@ -112,7 +112,7 @@ def standardScaling(feature):
 path = './'
 #pathResult="results/G20"
 pathResult="./"
-metaDataset = pd.read_csv("datasetFull.csv",sep=";")
+metaDataset = pd.read_csv("dataset.csv",sep=";")
 print(metaDataset)
 row,col = metaDataset.shape
 count=1
