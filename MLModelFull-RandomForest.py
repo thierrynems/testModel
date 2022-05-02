@@ -9,7 +9,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import LabelEncoder
 import math
 from keras.utils import np_utils
-from keras.optimizers import SGD, RMSprop, Adadelta, Adam, Nadam
+from tensorflow.keras.optimizers import SGD, RMSprop, Adadelta, Adam, Nadam
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, Flatten
 from keras.callbacks import ModelCheckpoint, EarlyStopping
@@ -108,8 +108,10 @@ def standardScaling(feature):
 ########################################################################################################################
 
 #load datasets
-path = 'datasets/G20'
-pathResult="results/G20"
+#path = 'datasets/G20'
+path = './'
+#pathResult="results/G20"
+pathResult="./"
 metaDataset = pd.read_csv("datasetFull.csv",sep=";")
 print(metaDataset)
 row,col = metaDataset.shape
