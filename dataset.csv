@@ -1,3 +1,3 @@
 code;Feature;featureGroup;filename;execute
-89Deeply;Protein Sequence (PSF);89Deeply;89FeatureDeeply.csv;1
-DC;Protein Sequence (PSF) ;Dipetide;EssentialFeature_collection_Dipetite.csv;
+AAC;Protein Sequence (PSF);AAC;EssentialFeature_collection_AAC.csv;1
+CTDC;Protein Sequence (PSF) ;CTDC;EssentialFeature_collection_CTDC.csv;
