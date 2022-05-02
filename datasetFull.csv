@@ -1,0 +1,49 @@
+code;Feature;featureGroup;filename;execute
+89Deeply;Protein Sequence (PSF);89Deeply;89FeatureDeeply.csv;1
+DC;Protein Sequence (PSF) ;Dipetide;EssentialFeature_collection_Dipetite.csv;
+CTriad;Protein Sequence (PSF);CTriad;EssentialFeature_collection_Ctriad.csv;1
+PAAC;Protein Sequence (PSF);PAAC;EssentialFeature_collection_PAAC.csv;1
+GEARY;Protein Sequence (PSF);GEARY;EssentialFeature_collection_GEARY.csv;1
+QSO;Protein Sequence (PSF);QSO;EssentialFeature_collection_QSO.csv;
+CTDC;Protein Sequence (PSF);CTDC;EssentialFeature_collection_CTDC.csv;1
+SOCN;Protein Sequence (PSF) ;SOCN;EssentialFeature_collection_SOCN.csv;1
+APAAC;Protein Sequence (PSF);APAAC;EssentialFeature_collection_APAAC.csv;
+Moran;Protein Sequence (PSF) ;Moran;EssentialFeature_collection_Moran.csv;1
+Moreau;Protein Sequence (PSF);Moreau;EssentialFeature_collection_Moreau.csv;1
+AAC;Protein Sequence (PSF);AAC;EssentialFeature_collection_AAC.csv;1
+CTDT;Protein Sequence (PSF);CTDT;EssentialFeature_collection_CTDT.csv;1
+CTDD;Protein Sequence (PSF);CTDD;EssentialFeature_collection_CTDD.csv;1
+DACC;Gene Sequence (GSF);DACC;EssentialFeature_collection_DACC.csv;1
+PseDNC;Gene Sequence (GSF);PseDNC;EssentialFeature_collection_PseDNC.csv;1
+PseKNC_3;Gene Sequence (GSF);PseKNC_3;EssentialFeature_collection_PseKNC_3.csv;1
+PseKNC_5;Gene Sequence (GSF);PseKNC_5;EssentialFeature_collection_PseKNC_5.csv;1
+KMER_2;Gene Sequence (GSF);KMER_2;EssentialFeature_collection_KMER_2.csv;1
+KMER_3;Gene Sequence (GSF);KMER_3;EssentialFeature_collection_KMER_3.csv;1
+DCC;Gene Sequence (GSF);DCC;EssentialFeature_collection_DCC.csv;1
+TACC;Gene Sequence (GSF);TACC;EssentialFeature_collection_TACC.csv;1
+TCC;Gene Sequence (GSF);TCC;EssentialFeature_collection_TCC.csv;1
+Codonwfeature;Gene Sequence (GSF);Codonw feature;EssentialFeature_collection_Codon.csv;1
+Best100ProtSeq;Protein Sequence (PSF);Best100ProtSeq;PaperG20_Fea-Best100-Protein.csv;1
+Best100Dipetide;Protein Sequence (PSF) ;Best100Dipetide;PaperG20_Fea-Best100-Dipetide.csv;1
+Best100CTriad;Protein Sequence (PSF);Best100CTriad;PaperG20_Fea-Best100-CTriad.csv;
+Best50QSO;Protein Sequence (PSF);Best50QSO;PaperG20_Fea-Best50-QSO.csv;1
+Best50APAAC;Protein Sequence (PSF);Best50APAAC;PaperG20_Fea-Best50-APAAC.csv;1
+Best100Moran;Protein Sequence (PSF) ;Best100Moran;PaperG20_Fea-Best100-Moran.csv;
+Best100Moreau;Protein Sequence (PSF);Best100Moreau;PaperG20_Fea-Best100-Moreau.csv;
+Best50CTDD;Protein Sequence (PSF);Best50CTDD;PaperG20_Fea-Best50-CTDD.csv;
+Best100Nucleotide;Gene Sequence (GSF);Best100Nucleotide;PaperG20_Fea-Best100-Nucleotide.csv;
+Nucleotide;Gene Sequence (GSF);Nucleotide;EssentialFeature_collection_Nucleotide.csv;1
+NT-WithoutCodonw;Gene Sequence (GSF);NT-WithoutCodonw;EssentialFeature_collection_NucleotideWithoutCodon.csv;
+Best100ProtGene;Protein Sequence (PSF) + Gene Sequence (GSF);Best100ProtGene;PaperG20_Fea-Best100-ProtNT.csv;
+Best50-Deeply;Protein Sequence (PSF);Best50-Deeply;PaperG20_Fea-Best50-Deeply.csv;
+Best100Tripetide;Protein Sequence (PSF);Best100Tripetide;PaperG20_Fea-Best100-Tripetide.csv;
+Best50PAAC;Protein Sequence (PSF);Best50PAAC;PaperG20_Fea-Best50-PAAC.csv;
+Best100GEARY;Protein Sequence (PSF);Best100GEARY;PaperG20_Fea-Best100-GEARY.csv;
+Best50SOCN;Protein Sequence (PSF) ;Best50SOCN;PaperG20_Fea-Best50-SOCN.csv;
+Best100NucleotidewithoutCodonw;Gene Sequence (GSF);Best100NucleotideWithoutCodonw;PaperG20_Fea-Best100-NucleoditeWithoutCodon.csv;
+Best50PseKNC_3;Gene Sequence (GSF);Best50PseKNC_3;PaperG20_Fea-Best50-PseKNC_3.csv;
+Best50PseKNC_5;Gene Sequence (GSF);Best50PseKNC_5;PaperG20_Fea-Best50-PseKNC_5.csv;
+Best50KMER_3;Gene Sequence (GSF);Best50KMER_3;PaperG20_Fea-Best50-KMER_3.csv;
+TC;Protein Sequence (PSF);Tripetide;EssentialFeature_collection_Tripetite.csv;1
+ProtSeq;Protein Sequence (PSF);All Proteine sequence;EssentialFeature_collection_Protein.csv;
+ProtNT;Protein Sequence (PSF) + Gene Sequence (GSF);Proteine and Nucleotide;EssentialFeature_collection_Sequence.csv;1
