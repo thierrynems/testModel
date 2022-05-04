@@ -1,5 +1,3 @@
 code;Feature;featureGroup;filename;execute
 CTDC;Protein Sequence (PSF) ;CTDC;EssentialFeature_collection_CTDC.csv;1
-CTDD;Protein Sequence (PSF) ;CTDD;EssentialFeature_collection_CTDD.csv;1
-CTriad;Protein Sequence (PSF) ;Ctriad;EssentialFeature_collection_Ctriad.csv;
 AAC;Protein Sequence (PSF);AAC;EssentialFeature_collection_AAC.csv;1
