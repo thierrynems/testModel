@@ -112,14 +112,17 @@ def standardScaling(feature):
 path = './'
 #pathResult="results/G20"
 pathResult="./"
-metaDataset = pd.read_csv("dataset.csv",sep=";")
+#ajout du nouveau fichier du dataset
+metaDataset = pd.read_csv("datasetTest.csv",sep=";")
 print(metaDataset)
 row,col = metaDataset.shape
 count=1
 for index in range(row) :
 	print("############################"+metaDataset['featureGroup'][index]+"############################################")
 	print(str(count)+" / "+str(row))
-	META_DATA_FILE_NAME="G20 Gene Essential Paper.xlsx"
+	#ajout de ton fichier du datastet
+	#META_DATA_FILE_NAME="G20 Gene Essential Paper.xlsx"
+	META_DATA_FILE_NAME="Archaeoglobus sulfaticallidus.xlsx"
 	FEAT=str(metaDataset['code'][index])
 	FEAT_FILE=os.path.join(path, str(metaDataset['filename'][index]))
 	META_FILE=os.path.join(path, str(META_DATA_FILE_NAME))
@@ -140,21 +143,25 @@ for index in range(row) :
 	feature_data = pd.read_csv(FEAT_FILE)
 	genes = feature_data.index
 	#
-	meta_df = pd.read_excel(META_FILE, sheet_name="Dataset_S2",engine="openpyxl")
-	meta_idx = meta_df['SysName']
+	meta_df = pd.read_excel(META_FILE, sheet_name="Sheet1",engine="openpyxl")
+	#nom du champ pour identifier les gene Gene_Locus
+	meta_idx = meta_df['Gene_Locus']
 	meta_idx = pd.Series([x.upper() for x in meta_idx.values])
 	meta_df = meta_df.set_index(keys=meta_idx)
 	meta_df
 	#
 	# get class labels for dataset
-	df_full = feature_data.merge(meta_df[['Class']], how='inner', left_index=True, right_index=True)
+	#remplace class par Gene_essentaility
+	df_full = feature_data.merge(meta_df[['Gene_essentaility']], how='inner', left_index=True, right_index=True)
 	#Nucleotide feature
 	if 'X' in df_full.columns:
 		df_full.drop('X', axis = 1, inplace=True)
 
 	# class mappings, 1 = Essential and 0 = Non-Essential
-	mappings = {'Dispensable': 0, 'ExpectedEssential': 1, 'EdgeInsertionOnly': 0, 'Desulfovibrio-specific essential': 1, 'NotUnique': 0, 'OtherNoInsertion': 2}
-	classes = df_full.pop('Class')
+	#deux class NE et E 
+	#mappings = {'Dispensable': 0, 'ExpectedEssential': 1, 'EdgeInsertionOnly': 0, 'Desulfovibrio-specific essential': 1, 'NotUnique': 0, 'OtherNoInsertion': 2}
+	mappings = {'NE': 0, 'E': 1}
+	classes = df_full.pop('Gene_essentaility')
 	essential_labels = classes.map(mappings)
 	df_full['essential'] = essential_labels
 
