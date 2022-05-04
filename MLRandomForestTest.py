@@ -122,7 +122,7 @@ for index in range(row) :
 	print(str(count)+" / "+str(row))
 	#ajout de ton fichier du datastet
 	#META_DATA_FILE_NAME="G20 Gene Essential Paper.xlsx"
-	META_DATA_FILE_NAME="Archaeoglobus sulfaticallidus.xlsx"
+	META_DATA_FILE_NAME="Desulfovibrio salexigens.xlsx"
 	FEAT=str(metaDataset['code'][index])
 	FEAT_FILE=os.path.join(path, str(metaDataset['filename'][index]))
 	META_FILE=os.path.join(path, str(META_DATA_FILE_NAME))
@@ -141,7 +141,7 @@ for index in range(row) :
 
 	# Kegg data from G20 Paper
 	feature_data = pd.read_csv(FEAT_FILE)
-	print(df_full)
+	print(feature_data)
 	genes = feature_data.index
 	#
 	meta_df = pd.read_excel(META_FILE, sheet_name="Sheet1",engine="openpyxl")
@@ -149,7 +149,7 @@ for index in range(row) :
 	meta_idx = meta_df['Gene_Locus']
 	meta_idx = pd.Series([x.upper() for x in meta_idx.values])
 	meta_df = meta_df.set_index(keys=meta_idx)
-	print(meta_df)
+	print(meta_df['Gene_essentaility'])
 	#
 	# get class labels for dataset
 	#remplace class par Gene_essentaility
